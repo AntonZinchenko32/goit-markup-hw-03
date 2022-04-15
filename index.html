@@ -14,112 +14,124 @@
   
   <body>
     <header class="header">
-        <div class="logo-header">
-          <a class="logo-link-first" href="index.html">Web</a><a class="logo-link-second" href="index.html">Studio</a>
+        <div class="container header-container">
+          <div class="logo-header">
+            <a class="logo-link-first" href="index.html">Web</a><a class="logo-link-second" href="index.html">Studio</a>
+          </div>
+                <nav class="nav">
+          <ul class="nav-list">
+            <li><a class="link-active" href="index.html">Студия</a></li>
+            <li><a class="link" href="portfolio.html">Портфолио</a></li>
+            <li><a class="link" href="#address">Контакты</a></li>
+          </ul>
+                </nav>
+          
+                <ul class="address-header-list">
+          <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="link" href="tel:+3809611111111">+3 096 111 11 11</a></li>
+                </ul>
         </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a class="link-active" href="index.html">Студия</a></li>
-          <li><a class="link" href="portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="#address">Контакты</a></li>    
-        </ul>
-      </nav>
-
-      <ul class="address-header-list">
-        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link" href="tel:+3809611111111">+3 096 111 11 11</a></li>
-      </ul>
     </header>
     
     <main>
       <section class="title">
-          <h1 class="slogan">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <div class="container hero-container">
+            <h1 class="slogan">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+            <button class="button" type="button">Заказать услугу</button>
+          </div>
       </section>
       
       <section class="benefits">
-        <ul class="benefits-list">
-          <li>
-            <h3 class="benefits-subtitle">Внимание к деталям</h3>
-            <p class="benefits-text">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="benefits-subtitle">Пунктуальность</h3>
-            <p class="benefits-text">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="benefits-subtitle">Планирование</h3>
-            <p class="benefits-text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="benefits-subtitle">Современные технологии</h3>
-            <p class="benefits-text">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="container benefits-container">
+          <ul class="benefits-list">
+            <li>
+              <h3 class="benefits-subtitle">Внимание к деталям</h3>
+              <p class="benefits-text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li>
+              <h3 class="benefits-subtitle">Пунктуальность</h3>
+              <p class="benefits-text">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li>
+              <h3 class="benefits-subtitle">Планирование</h3>
+              <p class="benefits-text">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li>
+              <h3 class="benefits-subtitle">Современные технологии</h3>
+              <p class="benefits-text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       
       <section class="desc">
-        <h2 class="desc-subtitle">Чем мы занимаемся</h2>
-        <ul class="desc-list">
-          <li>
-            <img src="images/desc-img-pc.jpg" alt="Работа за персональным компьютером" width="370" />
-          </li>
-          <li>
-            <img src="images/desc-img-phone.jpg" alt="Работа со смартфоном" width="370" />
-          </li>
-          <li>
-            <img src="images/desc-img-tablet.jpg" alt="Работа за планшетом" width="370" />
-          </li>
-        </ul>
+        <div class="container desc-container">
+          <h2 class="desc-subtitle">Чем мы занимаемся</h2>
+          <ul class="desc-list">
+            <li>
+              <img src="images/desc-img-pc.jpg" alt="Работа за персональным компьютером" width="370" />
+            </li>
+            <li>
+              <img src="images/desc-img-phone.jpg" alt="Работа со смартфоном" width="370" />
+            </li>
+            <li>
+              <img src="images/desc-img-tablet.jpg" alt="Работа за планшетом" width="370" />
+            </li>
+          </ul>
+        </div>
       </section>
       
       <section class="team">
-        <h2 class="team-title">Наша команда</h2>
-        <ul class="team-list">
-          <li>
-            <img src="images/team-img-p_designer.jpg" alt="Мужчина" width="270" />
-            <h3 class="team-subtitle">Игорь Демьяненко</h3>
-            <p class="team-desc">Product Designer</p>
-          </li>
-          <li>
-            <img src="images/team-img-developer.jpg" alt="Женщина" width="270" />
-            <h3 class="team-subtitle">Ольга Репина</h3>
-            <p class="team-desc">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="images/team-img-markiting.jpg" alt="Мужчина" width="270" />
-            <h3 class="team-subtitle">Николай Тарасов</h3>
-            <p class="team-desc">Marketing</p>
-          </li>
-          <li>
-            <img src="images/team-img-ui_designer.jpg" alt="Мужчина" width="270" />
-            <h3 class="team-subtitle">Михаил Ермаков</h3>
-            <p class="team-desc">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container team-container">
+          <h2 class="team-title">Наша команда</h2>
+          <ul class="team-list">
+            <li>
+              <img src="images/team-img-p_designer.jpg" alt="Мужчина" width="270" />
+              <h3 class="team-subtitle">Игорь Демьяненко</h3>
+              <p class="team-desc">Product Designer</p>
+            </li>
+            <li>
+              <img src="images/team-img-developer.jpg" alt="Женщина" width="270" />
+              <h3 class="team-subtitle">Ольга Репина</h3>
+              <p class="team-desc">Frontend Developer</p>
+            </li>
+            <li>
+              <img src="images/team-img-markiting.jpg" alt="Мужчина" width="270" />
+              <h3 class="team-subtitle">Николай Тарасов</h3>
+              <p class="team-desc">Marketing</p>
+            </li>
+            <li>
+              <img src="images/team-img-ui_designer.jpg" alt="Мужчина" width="270" />
+              <h3 class="team-subtitle">Михаил Ермаков</h3>
+              <p class="team-desc">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     
     </main>
     
     <footer class="footer">
-      <div class="logo-footer">
-        <a class="logo-link-first" href="index.html">Web</a><a class="logo-link-second" href="index.html">Studio</a>
+      <div class="container footer-container">
+        <div class="logo-footer">
+          <a class="logo-link-first" href="index.html">Web</a><a class="logo-link-second" href="index.html">Studio</a>
+        </div>
+        <address id="address">
+          <ul class="address-footer-list">
+            <li><a class="address-link" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li><a class="mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="tel-link" href="tel:+3809611111111">+3 096 111 11 11</a></li>
+          </ul>
+        </address>
       </div>
-      <address id="address">
-        <ul class="address-footer-list">
-          <li><a class="address-link" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-          <li><a class="mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="tel-link" href="tel:+3809611111111">+3 096 111 11 11</a></li>
-        </ul>
-      </address>
     </footer>
   </body>
 
