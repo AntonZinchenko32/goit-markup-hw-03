@@ -1,0 +1,194 @@
+/* *****Declaring variables***** */
+:root {
+  --background-color: #e5e5e5;
+  --text-color: #212121;
+  --brand-color-01: #2196f3;
+  --brand-color-02: #2f303a;
+  --highlight-button-color: #188ce8;
+}
+
+/* *****Styling body***** */
+body {
+  background-color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+/* *****Main page elements styling by classes***** */
+.header {
+  background-color: #ffffff;
+}
+.logo-link-first,
+.logo-link-second {
+  color: var(--brand-color-01);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-header .logo-link-second {
+  color: #212121;
+}
+.logo-footer .logo-link-second {
+  color: #ffffff;
+}
+.nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.address-header-list {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.title {
+  background-color: var(--brand-color-02);
+}
+.title .slogan {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+}
+.title .button {
+  background-color: var(--brand-color-01);
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+}
+.benefits {
+  font-size: 14px;
+}
+.benefits-subtitle {
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.benefits-text {
+  color: #757575;
+  line-height: 1.71;
+}
+.desc-subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.team {
+  background-color: #f5f4fa;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.team-list {
+  line-height: 1.19;
+  font-size: 16px;
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: inherit;
+}
+.team-desc {
+  color: #757575;
+}
+.footer {
+  background-color: var(--brand-color-02);
+}
+.address-footer-list {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address-footer-list .address-link {
+  color: #ffffff;
+}
+.address-footer-list .mail-link,
+.address-footer-list .tel-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* *****Portfolio elements styling by classes***** */
+.gallery-filter-list .button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+}
+.gallery-filter-list .button {
+  background-color: #f5f4fa;
+}
+
+.gallery-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.gallery-desc {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* *****Remove underlining from links***** */
+.logo-link-first,
+.logo-link-second,
+.address-link,
+.mail-link,
+.tel-link,
+.link,
+.link-active {
+  text-decoration: inherit;
+}
+
+/* *****Remove dots from lists***** */
+.nav-list,
+.address-header-list,
+.benefits-list,
+.desc-list,
+.team-list,
+.address-footer-list,
+.gallery-filter-list,
+.gallery-list {
+  list-style-type: none;
+}
+
+/* *****Remove links highlighting***** */
+.link {
+  color: #212121;
+}
+.address-header-list .link {
+  color: #757575;
+}
+
+/* *****Change font-style in address section to normal***** */
+.address-footer-list {
+  font-style: normal;
+}
+
+/* *****Elements behavior***** */
+.link-active,
+.address-link:hover,
+.mail-link:hover,
+.tel-link:hover,
+.link:hover,
+.address-link:focus,
+.mail-link:hover:focus,
+.tel-link:hover:focus,
+.link:focus {
+  color: var(--brand-color-01);
+}
+.button:hover,
+.button:focus,
+.button-active:hover,
+.button-active:focus {
+  background-color: var(--highlight-button-color);
+  color: #ffffff;
+}
