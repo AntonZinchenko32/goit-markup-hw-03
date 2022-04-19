@@ -1,6 +1,6 @@
 /* *****Declaring variables***** */
 :root {
-  --background-color: #e5e5e5;
+  --background-color: #ffffff;
   --text-color: #212121;
   --brand-color-01: #2196f3;
   --brand-color-02: #2f303a;
@@ -15,9 +15,7 @@ body {
 }
 
 /* *****Main page elements styling by classes***** */
-.header {
-  background-color: #ffffff;
-}
+
 .logo-link-first,
 .logo-link-second {
   color: var(--brand-color-01);
@@ -191,4 +189,82 @@ body {
 .button-active:focus {
   background-color: var(--highlight-button-color);
   color: #ffffff;
+}
+
+/* HW3 */
+.container {
+  width: 1600px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Шапка */
+.header-container {
+  align-items: baseline;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-bottom: 0px;
+}
+.nav-list,
+.address-header-list {
+  display: flex;
+}
+.logo-header {
+  margin-right: 93px;
+}
+.nav {
+  margin-right: 331px;
+}
+.nav-list .link-active,
+.nav-list .link,
+.address-header-list .link {
+  margin-right: 50px;
+}
+
+/* Герой */
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 280px;
+  flex-direction: column;
+  align-items: center;
+}
+.slogan {
+  text-align: center;
+}
+
+/* Преимущества */
+
+.benefits-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.benefits-list {
+  display: flex;
+}
+
+/* Опис, чим займається компанія */
+
+.desc-container {
+  flex-direction: column;
+  align-items: center;
+}
+.desc-list {
+  display: flex;
+}
+.desc-list li {
+  margin-right: 30px;
+}
+.desc-list li:last-child {
+  margin-right: -30px;
+}
+
+/* Команда */
+.team-container {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
 }
