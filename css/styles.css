@@ -268,3 +268,28 @@ body {
 .team-list {
   display: flex;
 }
+
+/* Футер */
+.footer-container {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Портфолио */
+.gallery-container {
+  flex-direction: column;
+}
+.gallery-filter-list {
+  display: flex;
+  justify-content: center;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery-list li {
+  margin-right: 30px;
+}
