@@ -293,3 +293,6 @@ body {
 .gallery-list li {
   margin-right: 30px;
 }
+.gallery-list li:last-child {
+  margin-right: -30px;
+}
