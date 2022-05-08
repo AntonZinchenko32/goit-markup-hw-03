@@ -14,21 +14,27 @@ body {
   color: var(--text-color);
   margin: 0;
 }
+/* Форматирование изображений */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* *****Main page elements styling by classes***** */
 
-.logo-link-first,
-.logo-link-second {
+.logo-link,
+.logo-link-second-part {
   color: var(--brand-color-01);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
-.logo-header .logo-link-second {
+.logo-link-second-part {
   color: #212121;
 }
-.logo-footer .logo-link-second {
+.footer-container .logo-link .logo-link-second-part {
   color: #ffffff;
 }
 .nav-list {
@@ -151,8 +157,8 @@ body {
 }
 
 /* *****Remove underlining from links***** */
-.logo-link-first,
-.logo-link-second,
+.logo-link,
+.logo-link-second-part,
 .address-link,
 .mail-link,
 .tel-link,
@@ -226,18 +232,19 @@ h1, h2, h3, p {
 .header {
   border-bottom: 1px solid #ECECEC;
 }
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .header-container {  
   display: flex;
   align-items: baseline;
-  justify-content: flex-start;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .nav-list,
 .address-header-list {
   display: flex;
 }
-.logo-header {
+.logo-link {
   margin-right: 93px;
 }
 .nav {
@@ -266,12 +273,12 @@ h1, h2, h3, p {
 
 /* Преимущества */
 
-.benefits-container {  padding-top: 94px;
+.benefits {  
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .benefits-list {
   display: flex;
-  justify-content: flex-start;
 }
 .benefits-list li:not(:last-child) {
   margin-right: 30px;
@@ -282,7 +289,7 @@ h1, h2, h3, p {
 
 /* Опис, чим займається компанія */
 
-.desc-container {  
+.desc {  
   padding-bottom: 94px;
 }
 .desc-subtitle {
@@ -290,14 +297,13 @@ h1, h2, h3, p {
 }
 .desc-list {
   display: flex;
-  justify-content: flex-start;
 }
 .desc-list li:not(:last-child) {
   margin-right: 30px;
 }
 
 /* Команда */
-.team-container {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -306,7 +312,6 @@ h1, h2, h3, p {
 }
 .team-list {
   display: flex;
-  justify-content: flex-start;
 }
 .team-list li {
   margin-right: 30px;
@@ -320,11 +325,14 @@ h1, h2, h3, p {
 }
 
 /* Футер */
-.footer-container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.address-footer-list li {
+.address-text-box {
+  margin-top: 20px;
+}
+.address-footer-list li:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -363,6 +371,4 @@ h1, h2, h3, p {
   border-bottom: 1px solid #EEEEEE;
   margin-top:  -3.975px;
 }
-.logo-footer {
-  margin-bottom: 20px;
-}
+
