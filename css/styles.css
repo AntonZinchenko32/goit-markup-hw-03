@@ -217,7 +217,7 @@ h1, h2, h3, p {
 
 /* HW3 */
 .container {
-  max-width: 1200px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -229,7 +229,7 @@ h1, h2, h3, p {
 .header-container {  
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -243,19 +243,13 @@ h1, h2, h3, p {
 .nav {
   margin-right: auto;
 }
-.nav-list li,
-.address-header-list li {
+.nav-list li:not(:last-child), 
+.address-header-list li:not(:last-child) {
   margin-right: 50px;
-}
-.nav-list:last-child,
-.address-header-list:last-child {
-  margin-right: -50px;
 }
 
 /* Герой */
 .hero-container {  
-  flex-direction: column;
-  align-items: center;
   padding-top: 200px;
   padding-bottom: 280px;
 }
@@ -277,14 +271,10 @@ h1, h2, h3, p {
 }
 .benefits-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
-.benefits-list li {
-  max-width: 270px;
+.benefits-list li:not(:last-child) {
   margin-right: 30px;
-}
-.benefits-list li:last-child {
-  margin-right: -30px;
 }
 .benefits-subtitle {
   margin-bottom: 10px;
@@ -292,8 +282,7 @@ h1, h2, h3, p {
 
 /* Опис, чим займається компанія */
 
-.desc-container {  flex-direction: column;
-  align-items: center;
+.desc-container {  
   padding-bottom: 94px;
 }
 .desc-subtitle {
@@ -301,18 +290,14 @@ h1, h2, h3, p {
 }
 .desc-list {
   display: flex;
+  justify-content: flex-start;
 }
-.desc-list li {
+.desc-list li:not(:last-child) {
   margin-right: 30px;
-}
-.desc-list li:last-child {
-  margin-right: -30px;
 }
 
 /* Команда */
 .team-container {
-  flex-direction: column;
-  align-items: center;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -321,6 +306,7 @@ h1, h2, h3, p {
 }
 .team-list {
   display: flex;
+  justify-content: flex-start;
 }
 .team-list li {
   margin-right: 30px;
