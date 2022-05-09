@@ -318,6 +318,8 @@ h1, h2, h3, p {
 }
 .team-list li:not(:last-child) {
   margin-right: 30px;
+}
+.team-text-box {
   text-align: center;
 }
 .team-subtitle {
