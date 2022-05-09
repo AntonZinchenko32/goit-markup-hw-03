@@ -50,6 +50,7 @@ img {
 }
 .title {
   background-color: var(--brand-color-02);
+  min-width: 1200px;
 }
 .title .slogan {
   color: #ffffff;
@@ -88,6 +89,7 @@ img {
 }
 .team {
   background-color: #f5f4fa;
+  min-width: 1200px;
 }
 .team-title {
   text-align: center;
@@ -118,6 +120,7 @@ img {
 }
 .footer {
   background-color: var(--brand-color-02);
+  min-width: 1200px;
 }
 .address-footer-list {
   color: #ffffff;
