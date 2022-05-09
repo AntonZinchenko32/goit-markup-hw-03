@@ -346,7 +346,7 @@ h1, h2, h3, p {
 .gallery-filter-list {  
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .gallery-filter-list li:not(:last-child) {
   margin-right: 8px;
@@ -359,12 +359,13 @@ h1, h2, h3, p {
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
 }
-.gallery-list li:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-.gallery-list li:not(:nth-child(n+7)) {
-  margin-bottom: 30px;
+/* Новая сетка */
+.gallery-list li {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .gallery-text-box {
   padding: 20px 24px;
