@@ -1,16 +1,21 @@
-/* *****Declaring variables***** */
+/* Переменные в цвета */
 :root {
   --background-color-01: #ffffff;
   --background-color-02: #f5f4fa;
+
   --text-color-01: #212121;
   --text-color-02:#757575;
   --text-color-03:rgba(255, 255, 255, 0.6);
+
   --brand-color-01: #2196f3;
   --brand-color-02: #2f303a;
+
   --button-color:#f5f4fa;
   --highlight-button-color: #188ce8;
+
   --border-color-01:#ECECEC;
   --border-color-02:#EEEEEE;
+
   --shadow-color-01: rgba(0, 0, 0, 0.12);
   --shadow-color-02:rgba(0, 0, 0, 0.14);
   --shadow-color-03:rgba(0, 0, 0, 0.2);
@@ -25,10 +30,7 @@ body {
   letter-spacing: 0.03em;
 }
 /* Reset */
-ul {
-  padding-left: 0px;
-  margin: 0;
-}
+
 h1, h2, h3, p {
   margin: 0;
 }
@@ -37,10 +39,16 @@ h1, h2, h3, p {
   color: var(--text-color-01);
 }
 .list {
+  padding-left: 0px;
+  margin: 0;
   list-style: none;
 }
 .address-header-list .link {
   color: var(--text-color-02);
+}
+/* *****Change font-style in address section to normal***** */
+.address-footer-list {
+  font-style: normal;
 }
 /* Форматирование изображений */
 img {
@@ -84,7 +92,6 @@ img {
 }
 .hero {
   background-color: var(--brand-color-02);
-  min-width: 1200px;
 }
 .hero .slogan {
   text-transform: uppercase;
@@ -128,7 +135,6 @@ img {
 }
 .team {
   background-color: var(--background-color-02);
-  min-width: 1200px;
 }
 .team-title {
   text-align: center;
@@ -158,8 +164,9 @@ img {
   color: var(--text-color-02);
 }
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--brand-color-02);
-  min-width: 1200px;
 }
 .address-footer-list {
   color: var(--background-color-01);
@@ -199,10 +206,7 @@ img {
   line-height: 1.88;
 }
 
-/* *****Change font-style in address section to normal***** */
-.address-footer-list {
-  font-style: normal;
-}
+
 
 /* *****Elements behavior***** */
 .link:hover,
@@ -225,12 +229,11 @@ img {
 }
 
 /* Шапка */
-.header {
-  border-bottom: 1px solid var(--border-color-01);
-}
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color-01);
 }
 .header-container {  
   display: flex;
@@ -323,10 +326,6 @@ img {
 }
 
 /* Футер */
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .address-text-box {
   margin-top: 20px;
 }
@@ -342,7 +341,7 @@ img {
 .gallery-filter-list {  
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .gallery-filter-list li:not(:last-child) {
   margin-right: 8px;
@@ -355,6 +354,7 @@ img {
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
   margin-left: -30px;
 }
 /* Новая сетка */
