@@ -259,7 +259,7 @@ img {
 }
 
 
-/* *****Portfolio elements styling by classes***** */
+/* Портфолио */
 .gallery {  
   padding-top: 94px;
   padding-bottom: 94px;
@@ -269,10 +269,13 @@ img {
   justify-content: center;
   margin-bottom: 50px;
 }
-.gallery-filter-list li:not(:last-child) {
+.gallery-filter-list .button:not(:last-child) {
   margin-right: 8px;
 }
 .gallery-filter-list .button {
+  border-style: none;
+  border-radius: 4px;
+  padding: 6px 22px;
   background-color: var(--button-color);
   font-family: inherit;
   font-weight: 500;
@@ -280,7 +283,25 @@ img {
   line-height: 1.63;
   cursor: pointer;
 }
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.gallery-list li {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.gallery-text-box {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-color-02);
+  border-right: 1px solid var(--border-color-02);
+  border-bottom: 1px solid var(--border-color-02);
+}
 .gallery-subtitle {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -291,22 +312,6 @@ img {
   font-size: 16px;
   line-height: 1.88;
 }
-
-
-
-.gallery-filter-list button {
-  border-style: none;
-  border-radius: 4px;
-  padding: 6px 22px;
-}
-.gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
-
 
 /* *****Elements behavior***** */
 .link-active {
@@ -324,47 +329,6 @@ img {
   color: var(--background-color-01);
 }
 
-/* HW3 */
-
-
-/* Шапка */
-
-
-
-/* Герой */
-
-
-/* Преимущества */
-
-
-
-/* Опис, чим займається компанія */
-
-
-
-/* Команда */
-
-
-/* Футер */
-
-
-/* Портфолио */
-
-/* Новая сетка */
-.gallery-list li {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
-}
-.gallery-text-box {
-  padding: 20px 24px;
-  border-left: 1px solid var(--border-color-02);
-  border-right: 1px solid var(--border-color-02);
-  border-bottom: 1px solid var(--border-color-02);
-}
-.gallery-subtitle {
-  margin-bottom: 4px;
-}
 /* Приховує заголовки */
 .visually-hidden {
   position: absolute;
