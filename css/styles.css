@@ -13,6 +13,25 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   margin: 0;
+  letter-spacing: 0.03em;
+}
+/* Reset */
+ul {
+  padding-left: 0px;
+  margin: 0;
+}
+h1, h2, h3, p {
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  color: #212121;
+}
+.list {
+  list-style: none;
+}
+.address-header-list .link {
+  color: #757575;
 }
 /* Форматирование изображений */
 img {
@@ -34,7 +53,7 @@ img {
 .logo-link-second-part {
   color: #212121;
 }
-.footer-container .logo-link .logo-link-second-part {
+.footer .logo-link .logo-link-second-part {
   color: #ffffff;
 }
 .nav-list {
@@ -42,23 +61,30 @@ img {
   font-size: 14px;
   line-height: 1.14;
 }
+.link-active {
+  color: var(--brand-color-01);
+}
 .address-header-list {
   color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
-.title {
+.nav-list, .address-header-list {
+  letter-spacing: 0.02em;
+}
+.hero {
   background-color: var(--brand-color-02);
   min-width: 1200px;
 }
-.title .slogan {
+.hero .slogan {
+  text-transform: uppercase;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 }
-.title .button {
+.hero .button {
   background-color: var(--brand-color-01);
   border-style: none;
   color: #ffffff;
@@ -67,6 +93,10 @@ img {
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
+}
+.slogan, 
+.hero .button {
+  letter-spacing: 0.06em;
 }
 .benefits {
   font-size: 14px;
@@ -152,6 +182,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .gallery-desc {
   color: #757575;
@@ -159,61 +190,14 @@ img {
   line-height: 1.88;
 }
 
-/* *****Remove underlining from links***** */
-.logo-link,
-.logo-link-second-part,
-.address-link,
-.mail-link,
-.tel-link,
-.link,
-.link-active {
-  text-decoration: inherit;
-}
-
-/* *****Remove dots from lists***** */
-.nav-list,
-.address-header-list,
-.benefits-list,
-.desc-list,
-.team-list,
-.address-footer-list,
-.gallery-filter-list,
-.gallery-list {
-  list-style-type: none;
-}
-
-/* *****Remove links highlighting***** */
-.link {
-  color: #212121;
-}
-.address-header-list .link {
-  color: #757575;
-}
-
 /* *****Change font-style in address section to normal***** */
 .address-footer-list {
   font-style: normal;
 }
 
-/* Reset */
-ul {
-  padding-left: 0px;
-  margin: 0;
-}
-h1, h2, h3, p {
-  margin: 0;
-}
-
 /* *****Elements behavior***** */
-.link-active,
-.address-link:hover,
-.mail-link:hover,
-.tel-link:hover,
 .link:hover,
-.address-link:focus,
-.mail-link:hover:focus,
-.tel-link:hover:focus,
-.link:focus {
+.link:hover:focus {
   color: var(--brand-color-01);
 }
 .button:hover,
@@ -241,7 +225,7 @@ h1, h2, h3, p {
 }
 .header-container {  
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 .nav-list,
 .address-header-list {
@@ -259,15 +243,18 @@ h1, h2, h3, p {
 }
 
 /* Герой */
-.hero-container {  
+.hero {  
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 .slogan {
+  width: 604px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
-.hero-container button {
+.hero button {
   display: block;
   margin: 0 auto;
   padding: 10px 32px;
