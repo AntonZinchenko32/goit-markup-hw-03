@@ -1,17 +1,26 @@
 /* *****Declaring variables***** */
 :root {
-  --background-color: #ffffff;
-  --text-color: #212121;
+  --background-color-01: #ffffff;
+  --background-color-02: #f5f4fa;
+  --text-color-01: #212121;
+  --text-color-02:#757575;
+  --text-color-03:rgba(255, 255, 255, 0.6);
   --brand-color-01: #2196f3;
   --brand-color-02: #2f303a;
+  --button-color:#f5f4fa;
   --highlight-button-color: #188ce8;
+  --border-color-01:#ECECEC;
+  --border-color-02:#EEEEEE;
+  --shadow-color-01: rgba(0, 0, 0, 0.12);
+  --shadow-color-02:rgba(0, 0, 0, 0.14);
+  --shadow-color-03:rgba(0, 0, 0, 0.2);
 }
 
 /* *****Styling body***** */
 body {
-  background-color: var(--background-color);
+  background-color: var(--background-color-01);
   font-family: 'Roboto', sans-serif;
-  color: var(--text-color);
+  color: var(--text-color-01);
   margin: 0;
   letter-spacing: 0.03em;
 }
@@ -25,13 +34,13 @@ h1, h2, h3, p {
 }
 .link {
   text-decoration: none;
-  color: #212121;
+  color: var(--text-color-01);
 }
 .list {
   list-style: none;
 }
 .address-header-list .link {
-  color: #757575;
+  color: var(--text-color-02);
 }
 /* Форматирование изображений */
 img {
@@ -51,10 +60,10 @@ img {
   line-height: 1.19;
 }
 .logo-link-second-part {
-  color: #212121;
+  color: var(--text-color-01);
 }
 .footer .logo-link .logo-link-second-part {
-  color: #ffffff;
+  color: var(--background-color-01);
 }
 .nav-list {
   font-weight: 500;
@@ -65,7 +74,7 @@ img {
   color: var(--brand-color-01);
 }
 .address-header-list {
-  color: #757575;
+  color: var(--text-color-02);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -79,7 +88,7 @@ img {
 }
 .hero .slogan {
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color-01);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -87,7 +96,7 @@ img {
 .hero .button {
   background-color: var(--brand-color-01);
   border-style: none;
-  color: #ffffff;
+  color: var(--background-color-01);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -108,7 +117,7 @@ img {
   text-transform: uppercase;
 }
 .benefits-text {
-  color: #757575;
+  color: var(--text-color-02);
   line-height: 1.71;
 }
 .desc-subtitle {
@@ -118,7 +127,7 @@ img {
   line-height: 1.17;
 }
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-color-02);
   min-width: 1200px;
 }
 .team-title {
@@ -133,10 +142,10 @@ img {
 }
 .team-list-item {
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);;
-  background-color: #ffffff;
+  box-shadow: 0px 1px 3px var(--shadow-color-01),
+  0px 1px 1px var(--shadow-color-02),
+  0px 2px 1px var(--shadow-color-03);
+  background-color: var(--background-color-01);
 }
 .team-text-box {
   padding: 30px 0;
@@ -146,24 +155,24 @@ img {
   font-size: inherit;
 }
 .team-desc {
-  color: #757575;
+  color: var(--text-color-02);
 }
 .footer {
   background-color: var(--brand-color-02);
   min-width: 1200px;
 }
 .address-footer-list {
-  color: #ffffff;
+  color: var(--background-color-01);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .address-footer-list .address-link {
-  color: #ffffff;
+  color: var(--background-color-01);
 }
 .address-footer-list .mail-link,
 .address-footer-list .tel-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-color-03);
 }
 
 /* *****Portfolio elements styling by classes***** */
@@ -175,7 +184,7 @@ img {
   cursor: pointer;
 }
 .gallery-filter-list .button {
-  background-color: #f5f4fa;
+  background-color: var(--button-color);
 }
 
 .gallery-subtitle {
@@ -185,7 +194,7 @@ img {
   letter-spacing: 0.06em;
 }
 .gallery-desc {
-  color: #757575;
+  color: var(--text-color-02);
   font-size: 16px;
   line-height: 1.88;
 }
@@ -205,7 +214,7 @@ img {
 .button-active:hover,
 .button-active:focus {
   background-color: var(--highlight-button-color);
-  color: #ffffff;
+  color: var(--background-color-01);
 }
 
 /* HW3 */
@@ -217,7 +226,7 @@ img {
 
 /* Шапка */
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid var(--border-color-01);
 }
 .header {
   padding-top: 24px;
@@ -356,9 +365,9 @@ img {
 }
 .gallery-text-box {
   padding: 20px 24px;
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid var(--border-color-02);
+  border-right: 1px solid var(--border-color-02);
+  border-bottom: 1px solid var(--border-color-02);
 }
 .gallery-subtitle {
   margin-bottom: 4px;
