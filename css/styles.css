@@ -269,7 +269,7 @@ img {
   justify-content: center;
   margin-bottom: 50px;
 }
-.gallery-filter-list .button:not(:last-child) {
+.gallery-filter-list li:not(:last-child) {
   margin-right: 8px;
 }
 .gallery-filter-list .button {
